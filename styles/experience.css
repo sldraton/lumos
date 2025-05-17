@@ -4,6 +4,17 @@ section.experience-section {
     height: 100vh !important;
 }
 
+.expi-section-title {
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 3.5rem);
+    color: white;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966);
+    padding-inline: 20px;
+    flex: 1;
+    align-items: center;
+
+}
 
 section.experience-section::before {
     content: "";
