@@ -1,0 +1,89 @@
+section.skills-section {
+    position: relative;
+    z-index: 0;
+    height: 100vh !important;
+}
+
+
+section.skills-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("../assets/skills/over_coast.png");
+    filter: brightness(0.9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: clamp(3rem, 5vw, 3.5rem);
+    color: white;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966);
+    padding-inline: 20px;
+    flex: 1;
+    align-items: center;
+    /*
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+    */
+}
+
+.skill-icon {
+    aspect-ratio: 1/1;
+    width: 3.5vw;
+    filter:brightness(0) grayscale() ;
+}
+
+.skill-icon:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.8);
+}
+
+.card-title {
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+}
+
+.section-content {
+    flex: 5;
+}
+
+@media (max-width: 600px) {
+    .skills-card {
+        width: 50vw;
+        height: 25vw !important;
+    }
+    .skill-icon {
+        width: 6vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .skills-card {
+        height: 15vw !important;
+    }
+}
+
+.skills-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.334);
+  border-radius: 20px;
+}
+
+.skills-card:hover {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.8);
+    background-color: rgba(215, 215, 215, 0.85);
+    .card-header {
+        color: black;
+    }
+}
+
+.card-header {
+    color: white;
+}

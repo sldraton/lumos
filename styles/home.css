@@ -1,0 +1,68 @@
+section.home-section {
+    position: relative;
+    z-index: 0;
+    height: 100vh !important;
+}
+
+section.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("../assets/home/lake_castle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.home-left {
+    color: white;
+}
+
+.profile-picture {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 35vw;
+    max-width: 280px;
+    max-height: max-content;
+    border-radius: 50%;
+    filter: sepia(0.5) saturate(140%);
+}
+
+.profile-name {
+    font-size: clamp(1rem, 5vw, 2.6rem);
+    font-weight: 900;
+}
+
+.profile-title {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 600;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.profile-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.3rem;
+}
+
+.linkedin-button, .contact-button {
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: none;
+    color: white;
+    background: none;
+    padding-block: 3px;
+    padding-inline: 15px;
+}
+
+.linkedin-button:hover, .contact-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+

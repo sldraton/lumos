@@ -1,0 +1,39 @@
+section.experience-section {
+    position: relative;
+    z-index: 0;
+    height: 100vh !important;
+}
+
+
+section.experience-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("../assets/experience/coast.png");
+    filter: brightness(0.9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.company-icon {
+    aspect-ratio: 1/1;
+    width: 8vw;
+    margin: 5px;
+}
+
+.company-button {
+    margin: none;
+    padding: 0;
+    border-radius: 20%;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white opacity(0.3);
+}
+
+.expi-connector {
+    background-color: white;
+    height: 8vw;
+    width: 8vw;
+}

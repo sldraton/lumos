@@ -1,0 +1,12 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+main {
+    font-family: "Lexend", sans-serif !important;
+}
+
+section {
+    height: 100vh !important;
+}
