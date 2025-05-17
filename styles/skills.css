@@ -48,7 +48,7 @@ section.skills-section::before {
 }
 
 .section-content {
-    flex: 5;
+    flex: 6;
 }
 
 @media (max-width: 600px) {
@@ -60,13 +60,11 @@ section.skills-section::before {
     .skill-icon {
         width: 6vw;
     }
-
-    .section-title {
-        flex: 1 !important;
-    }
-
     .section-content {
-        flex: 2 !important;
+        flex: 8;
+    }
+    .section-title {
+        flex: 2;
     }
 }
 
