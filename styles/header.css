@@ -30,3 +30,27 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.6rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
