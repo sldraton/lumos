@@ -1,8 +1,7 @@
 section.home-section {
     position: relative;
     z-index: 0;
-    height: 100vh;
-    height: 100dvh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 section.home-section::before {
