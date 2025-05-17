@@ -6,7 +6,7 @@ section.experience-section {
 
 .expi-section-title {
     font-weight: 800;
-    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     color: white;
     letter-spacing: 0.5rem;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966);
@@ -30,7 +30,7 @@ section.experience-section::before {
 
 .company-icon {
     aspect-ratio: 1/1;
-    width: 8vw;
+    width: 15vw;
     margin: 5px;
 }
 
@@ -39,12 +39,24 @@ section.experience-section::before {
     padding: 0;
     border-radius: 20%;
     border-style: solid;
-    border-width: 5px;
-    background-color: white opacity(0.3);
+    border-width: 8px;
+    border-color: rgb(190, 190, 190);
+}
+
+.expi-container {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
 }
 
 .expi-connector {
+    width: 40vw;
+    height: 40px;
     background-color: white;
-    height: 8vw;
-    width: 8vw;
+}
+
+.connector {
+    background-color: rgb(190, 190, 190);
+    width: 10px;
+    height: 40px;
 }
