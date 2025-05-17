@@ -55,6 +55,7 @@ section.skills-section::before {
     .skills-card {
         width: 50vw;
         height: 29vw !important;
+        max-height: 100px;
     }
     .skill-icon {
         width: 6vw;
