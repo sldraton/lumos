@@ -54,11 +54,19 @@ section.skills-section::before {
 @media (max-width: 600px) {
     .skills-card {
         width: 50vw;
-        height: 29vw !important;
+        height: 35vw !important;
         max-height: 100px;
     }
     .skill-icon {
         width: 6vw;
+    }
+
+    .section-title {
+        flex: 1;
+    }
+
+    .section-content {
+        flex: 3;
     }
 }
 
