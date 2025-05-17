@@ -6,3 +6,7 @@ html, body {
 main {
     font-family: "Lexend", sans-serif !important;
 }
+
+section {
+    height: calc(var(--vh, 1vh) * 100);
+}

@@ -6,7 +6,7 @@ section.experience-section {
 
 .expi-section-title {
     font-weight: 800;
-    font-size: clamp(1.8rem, 3vw, 3.5rem);
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
     color: white;
     letter-spacing: 0.5rem;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966);
