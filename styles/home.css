@@ -30,15 +30,19 @@ section.home-section::before {
 }
 
 .profile-name {
-    font-size: clamp(1rem, 5vw, 2.6rem);
+    font-size: clamp(1.1rem, 5vw, 2.6rem);
     font-weight: 900;
 }
 
 .profile-title {
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: 600;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+.profile-statement {
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
 }
 
 .profile-links {
