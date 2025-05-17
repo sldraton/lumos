@@ -1,7 +1,8 @@
 section.home-section {
     position: relative;
     z-index: 0;
-    height: 100dvh !important;
+    height: 100vh;
+    height: 100dvh;
 }
 
 section.home-section::before {
