@@ -1,6 +1,6 @@
 html, body {
-    overflow-x: hidden;
-    width: 100%;
+    overflow-x: hidden !important;
+    width: 100% !important;
 }
 
 main {
@@ -9,4 +9,12 @@ main {
 
 section {
     height: calc(var(--vh, 1vh) * 100);
+}
+
+.modal-body {
+    max-height: 40vh;
+}
+
+body.modal-open {
+  overflow-x: hidden;
 }
