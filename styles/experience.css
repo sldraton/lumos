@@ -1,7 +1,6 @@
 section.experience-section {
     position: relative;
     z-index: 0;
-    height: 100vh !important;
 }
 
 .expi-section-title {
@@ -11,9 +10,11 @@ section.experience-section {
     letter-spacing: 0.5rem;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966);
     padding-inline: 20px;
-    flex: 1;
     align-items: center;
+}
 
+.expi-content {
+    justify-content: space-around;
 }
 
 section.experience-section::before {
@@ -30,33 +31,24 @@ section.experience-section::before {
 
 .company-icon {
     aspect-ratio: 1/1;
-    width: 15vw;
-    margin: 5px;
+    width: 20vw;
+    max-width: 100px;
+    object-fit: contain;
+    padding: none;
+    margin: none;
+    border: 10px solid rgba(255, 255, 255, 0.157);
+    border-radius: 8px;
 }
 
 .company-button {
-    margin: none;
-    padding: 0;
-    border-radius: 20%;
-    border-style: solid;
-    border-width: 8px;
-    border-color: rgb(190, 190, 190);
+    width: max-content;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.expi-container {
-    display: flex;
-    justify-content: space-between;
-    width: 40vw;
-}
-
-.expi-connector {
-    width: 40vw;
-    height: 40px;
-    background-color: white;
-}
-
-.connector {
-    background-color: rgb(190, 190, 190);
-    width: 10px;
-    height: 40px;
+.year-font {
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    font-weight: 600;
+    color: white;
 }
