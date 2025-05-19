@@ -18,3 +18,16 @@ section {
 body.modal-open {
   overflow-x: hidden;
 }
+
+footer {
+    color: white;
+    background-color: black;
+    bottom: 0px;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+a {
+    text-decoration: none;
+    border: none;
+}
