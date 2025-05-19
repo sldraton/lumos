@@ -7,8 +7,7 @@ section.contact-section::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url("../assets/contact/marsh_clear.png");
-    filter:hue-rotate(350deg);
+    background-image: url("../assets/contact/marsh_edited.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,19 +16,30 @@ section.contact-section::before {
 
 .social-icon {
     width: 1.4rem;
-    fill: rgb(175, 97, 220);
+    /* fill: rgb(175, 97, 220); */
+    fill: rgb(74, 50, 84);
 }
 
 .potion-icon {
     width: 1rem;
-    fill: greenyellow;
+    /* fill: greenyellow; */
+    fill: rgb(74, 50, 84);
 }
 
 .footer-note {
-    font-size: clamp(0.8rem, 1vw, 1.3rem);
+    font-size: clamp(0.9rem, 0.8vw, 1.1rem);
+    font-weight: 300;
     line-height: 1;
+    color: rgb(164, 164, 164);
 }
 
 .copyright {
     font-size: x-small;
+    color: rgb(188, 82, 83);
+}
+
+.footer-quote {
+    font-size: clamp(0.8rem, 0.8vw, 1.1rem);
+    font-weight: 300;
+    line-height: 1;
 }
