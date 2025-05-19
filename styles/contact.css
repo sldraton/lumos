@@ -7,8 +7,8 @@ section.contact-section::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url("../assets/contact/marsh.png");
-    filter:hue-rotate(350deg) brightness(2);
+    background-image: url("../assets/contact/marsh_clear.png");
+    filter:hue-rotate(350deg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,11 +16,20 @@ section.contact-section::before {
 }
 
 .social-icon {
-    width: 1.8vw;
+    width: 1.4rem;
     fill: rgb(179, 124, 187);
 }
 
 .potion-icon {
-    width: 1.5vw;
+    width: 1rem;
     fill: greenyellow;
+}
+
+.footer-note {
+    font-size: clamp(0.8rem, 1vw, 1.3rem);
+    line-height: 1;
+}
+
+.copyright {
+    font-size: x-small;
 }

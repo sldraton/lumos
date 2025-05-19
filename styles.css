@@ -21,10 +21,11 @@ body.modal-open {
 
 footer {
     color: white;
-    background-color: black;
+    background-color: rgb(40, 23, 32);
     bottom: 0px;
-    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 -10px 15px rgba(40, 23, 32, 0.8);
     backdrop-filter: blur(8px);
+    row-gap: 0.5rem;
 }
 
 a {
