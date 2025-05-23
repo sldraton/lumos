@@ -45,12 +45,12 @@ section.contact-section::before {
 }
 
 .form-label, .form-control, .form-select {
-    font-size: clamp(0.5rem, 1.2vw, 0.8rem);
+    font-size: clamp(0.7rem, 1.2vw, 1rem);
 }
 
 .form-label {
     color: white;
-    padding-top: 0.25rem;
+    padding-top: 0.3rem;
 }
 
 form {
