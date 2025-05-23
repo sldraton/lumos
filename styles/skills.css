@@ -22,7 +22,7 @@ section.skills-section::before {
     font-size: clamp(3rem, 5vw, 3.5rem);
     color: white;
     letter-spacing: 0.5rem;
-    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966);
+    /* text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966); */
     padding-inline: 20px;
     flex: 1;
     align-items: center;

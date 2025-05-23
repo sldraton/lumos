@@ -8,7 +8,7 @@ section.experience-section {
     font-size: clamp(2rem, 5vw, 3.5rem);
     color: white;
     letter-spacing: 0.5rem;
-    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966);
+    /* text-shadow: 0 3px 10px rgba(0, 0, 0, 0.966); */
     padding-inline: 20px;
     align-items: center;
 }
