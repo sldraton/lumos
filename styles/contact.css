@@ -7,7 +7,8 @@ section.contact-section::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url("../assets/contact/marsh_edited.png");
+    background-image: url("../assets/contact/marsh.webp");
+    filter: brightness(0.8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,13 +18,13 @@ section.contact-section::before {
 .social-icon {
     width: 1.4rem;
     /* fill: rgb(175, 97, 220); */
-    fill: rgb(74, 50, 84);
+    fill: #bc933b;
 }
 
 .potion-icon {
     width: 1rem;
     /* fill: greenyellow; */
-    fill: rgb(74, 50, 84);
+    fill: #bc933b;
 }
 
 .footer-note {
@@ -35,7 +36,7 @@ section.contact-section::before {
 
 .copyright {
     font-size: x-small;
-    color: rgb(188, 82, 83);
+    color: #bc933b;
 }
 
 .footer-quote {
@@ -79,13 +80,13 @@ form {
 }
 
 .submit-form {
-    background-color: rgb(188, 82, 83);
+    background-color: #bc933b;
     color: white;
     font-weight: 500;
     font-size: clamp(0.7rem, 1.2vw, 1.3rem);
     /* border: solid white;
     border-width: 1px; */
-    border-radius: 10px;
+    border-radius: 7px;
     padding-block: 0.2rem;
     transition: background-color 0.4s color 0.3s border 0.3s;
 }

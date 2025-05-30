@@ -51,9 +51,9 @@ section.home-section::before {
     column-gap: 1.3rem;
 }
 
-.linkedin-button, .contact-button {
+.linkedin-button {
     border-color: white;
-    border-width: 3px;
+    border-width: 1.5px;
     border-style: solid;
     border-radius: 20px;
     background-color: none;
@@ -63,7 +63,24 @@ section.home-section::before {
     padding-inline: 15px;
 }
 
-.linkedin-button:hover, .contact-button:hover {
+.contact-button {
+    /* border-color: none;
+    border-width: 1.5px;
+    border-style: solid; */
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    padding-block: 3px;
+    padding-inline: 15px;
+}
+
+.contact-button:hover, .contact-button:focus {
+    background-color: #b58f44;
+    color: white;
+}
+
+.linkedin-button:hover {
     background-color: white;
     color: black;
 }
