@@ -33,63 +33,70 @@ section.skills-section::before {
     */
 }
 
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1.5em;
+    place-items: center;
+}
+
+.skills-card {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* backdrop-filter: blur(1px); */
+    border-radius: 15px;
+    transition: background-color 0.35s box-shadow 0.35s;
+}
+
+.skills-card:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.5);
+}
+
+.skills-icon-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    place-items: center; 
+    width: 100%;
+    height: 100%;
+    padding-inline: 1rem;
+}
 .skill-icon {
     aspect-ratio: 1/1;
-    width: 3.5vw;
-    filter:brightness(0) grayscale() ;
+    width: clamp(1.5rem,2.5vw,3.5rem);
+    fill: #000;
+    filter: grayscale() brightness(0);
 }
 
 .skill-icon:hover, .skill-icon:active {
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.8);
+    fill: #baaa5c;
+    filter: none;
+    background-color: #000;
 }
 
-.card-header {
+.card-title {
     font-size: clamp(0.8rem, 1.2vw, 2rem);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: none;
+    margin: none;
 }
 
-.section-content {
-    display: flex;
-    flex: 6;
-    justify-content: space-around;
-}
+@media (min-width:768px) {
+    .section-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr;
+        column-gap: 1em;
+        min-height: 0;
+    }
 
-@media (max-width: 600px) {
     .skills-card {
-        width: 50vw;
-        height: 40vw !important;
-        max-height: 120px;
+        height: 38%;
+        margin-inline: 20px;
     }
-    .skill-icon {
-        width: 6vw;
-    }
-}
-
-@media (min-width: 1000px) {
-    .skills-card {
-        height: 15vw !important;
-    }
-}
-
-.skills-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.334);
-  border-radius: 20px;
-}
-
-.skills-card:hover {
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.8);
-    background-color: rgba(215, 215, 215, 0.85);
-    .card-header {
-        color: black;
-    }
-}
-
-.card-header {
-    color: white;
 }
