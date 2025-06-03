@@ -43,6 +43,10 @@ section.contact-section::before {
     font-size: clamp(0.6rem, 0.8vw, 1.1rem);
     font-weight: 300;
     line-height: 1;
+    color: white !important;
+    display: inline;
+    filter: none;
+    opacity: 1;
 }
 
 .form-label, .form-control, .form-select {
