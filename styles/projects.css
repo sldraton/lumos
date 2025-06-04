@@ -15,36 +15,47 @@ section.projects-section::before {
     z-index: -1;
 }
 
-.cards-wrapper {
+#projects .cards-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.card img {
-    max-width: 100%;
-    max-height: 100%;
+#projects.image-wrapper {
+    max-height: 40%;
+}
+
+#projects .card img {
+    height: 10em;
     object-fit: cover;
 }
 
-.card {
+#projects .card {
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22,26, 0.18);
     border: none;
     border-radius: 0;
-    width: calc(100%/4);
+    width: calc(100%/5);
+    min-width: 15dvw;
+    height: 55dvh;
 }
 
-.carousel-inner {
+#projects .carousel-inner {
     padding: 1em;
 }
 
-.card-title {
-    text-wrap: wrap;
+#projects .card-title {
+    font-size: clamp(0.5rem,1.3vw,1rem);
+    text-align: start;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: #e1e1e1;
+#projects .card-description {
+    font-size: clamp(0.5rem,1.3vw,0.8rem);
+    text-wrap: ellipsis;
+}
+
+#projects .carousel-control-prev,
+#projects .carousel-control-next {
+    background-color: #ffbb00;
     width: 5vh;
     height: 5vh;
     border-radius: 50%;
@@ -56,22 +67,19 @@ section.projects-section::before {
     display:inline-block;
     background-color: rgb(45, 45, 45);
     color: white;
-    font-size: 10px;
-    padding-inline: 0.5em;
-    padding-block: 0.2em;
 }
 
 .status-badge {
     display:inline-block;
     background-color: rgb(155, 155, 155);
     color: black;
-    font-size: 10px;
-    padding-inline: 0.5em;
-    padding-block: 0.2em;
 }
 
 .tech-tags, .status-badge {
     border-radius: 3px;
+    font-size: clamp(0.5rem, 1.1vw, 0.6rem);
+    padding-inline: 0.5em;
+    padding-block: 0.2em;
 }
 
 .view-more-btn {
@@ -89,25 +97,21 @@ section.projects-section::before {
     margin-block: 0.5em;
 }
 
-.card-description {
-    font-size: 10px;
-    text-wrap: ellipsis;
-}
-
-@media (min-width: 768px) {
-    .card img {
+@media (min-width: 769px) {
+    #projects .card img {
         height: 10em;
     }
 }
 
-@media (max-width:768px) {
-    .card {
+@media (max-width:769px) {
+    #projects .card {
         width: 65%;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 567px) {
-    .card:not(:first-child) {
+    #projects .card:not(:first-child) {
         display: none;
     }
 }
