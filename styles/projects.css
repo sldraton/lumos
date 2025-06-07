@@ -28,8 +28,10 @@ section.projects-section::before {
     scrollbar-gutter: stable;
     height: auto;
     /* Default for mobile */
-    max-height: calc(1 * 300px + 1rem);
+    /* max-height: calc(1 * 300px + 1rem); */
     justify-content:flex-start;
+    gap: 1rem;
+    padding-inline-start: 1rem;
 }
 
 #projects .img-container {
@@ -98,7 +100,7 @@ section.projects-section::before {
 #projects .learn-more-btn {
     background-color: #bc933b;
     color: white;
-    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+    font-size: clamp(0.6rem, 1.1vw, 1.5rem);
     padding-block: 0.2rem;
     border-radius: 1rem;
     transition: all 0.35s;
@@ -112,11 +114,16 @@ section.projects-section::before {
     #projects .row {
         max-height: 60dvh;
         column-gap: 1rem;
-        justify-content: center;
         row-gap: 3rem;
     }
 /* 
     #projects .card {
         width: 80% !important;
     } */
+}
+
+@media (max-width: 767px) {
+    #projects .row {
+        width: 100vw;
+    }
 }

@@ -1,5 +1,5 @@
 html, body {
-    overflow-x: hidden !important;
+    overflow: hidden !important;
     width: 100% !important;
 }
 
@@ -8,6 +8,7 @@ main {
     overflow-y: scroll;
     height: 100vh;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
 
 section {
