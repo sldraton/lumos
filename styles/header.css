@@ -6,9 +6,9 @@
 .navbar {
     background: rgba(0, 0, 0, 0);
     font-family: "Lexend", sans-serif;
-    backdrop-filter: blur(8px);           /* blur effect */
-    -webkit-backdrop-filter: blur(8px);   /* Safari support */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+    backdrop-filter: blur(8px);           
+    -webkit-backdrop-filter: blur(8px);   
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
