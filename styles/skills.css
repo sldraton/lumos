@@ -1,9 +1,7 @@
 section.skills-section {
     position: relative;
     z-index: 0;
-    height: calc(var(--vh, 1vh) * 100);
 }
-
 
 section.skills-section::before {
     content: "";
