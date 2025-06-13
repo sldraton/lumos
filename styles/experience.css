@@ -38,6 +38,13 @@ section.experience-section::before {
     margin: none;
     border: 10px solid rgba(255, 255, 255, 0.157);
     border-radius: 8px;
+    transition: all 0.35s;
+}
+
+.company-icon:hover {
+    filter: brightness(1.3);
+    border-color: white;
+    transform: translateY(-5px);
 }
 
 .company-button {
